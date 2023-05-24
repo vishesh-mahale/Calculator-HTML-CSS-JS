@@ -59,7 +59,12 @@
 
     <script>
         function calculateResult() {
-          
+            var replaced = calculator_result.value;
+            if (calculator_result.value.includes('÷') || calculator_result.value.includes('×')) {
+                replaced = calculator_result.value.replaceAll('×', '*').replaceAll('÷', '/');
+                calculator_result.value = eval(replaced);
+            }
+            calculator_result.value = eval(replaced) ? eval(replaced) : "0.0";
         }
 
         function addNewInput(input) {
