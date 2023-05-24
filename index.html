@@ -10,11 +10,64 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  
+    <div class="container">
+        <div class="calculator">
+
+            <!--container for input and output-->
+            <div class="result">
+                <input type="text" readonly id="calculator_result" placeholder="0.0">
+            </div>
+
+            <!-- container for all input buttons -->
+            <div class="buttons">
+                <div id="clearbutton" onclick="calculator_result.value = ''">C</div> <!-- all clear button-->
+                <div id="delete"
+                    onclick="calculator_result.value=calculator_result.value.substring(0,calculator_result.value.length - 1)">
+                    <i class="fa-solid fa-delete-left"></i>
+                </div> <!-- clear button -->
+
+                <div id="percentage" onclick="addNewInput('%')">%</div>
+                <div id="div" onclick="addNewInput('&#247;')">&#247;</div>
+
+                <div onclick="addNewInput('7')">7</div>
+                <div onclick="addNewInput('8')">8</div>
+                <div onclick="addNewInput('9')">9</div>
+
+                <div id="div" onclick="addNewInput('&#215;')">&#215;</div>
+
+                <div onclick="addNewInput('4')">4</div>
+                <div onclick="addNewInput('5')">5</div>
+                <div onclick="addNewInput('6')">6</div>
+
+                <div id="substract" onclick="addNewInput('-')">-</div>
+
+                <div onclick="addNewInput('1')">1</div>
+                <div onclick="addNewInput('2')">2</div>
+                <div onclick="addNewInput('3')">3</div>
+
+                <div id="add" onclick="addNewInput('+')">+</div>
+                <div id="zero" onclick="addNewInput('0')">0</div>
+                <div id="dot" onclick="addNewInput('.')">.</div>
+                <div id="eql" onclick="calculateResult()">=</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calculateResult() {
+          
+        }
+
+        function addNewInput(input) {
+            calculator_result.value += input;
+        }
+
+    </script>
+
 </body>
 
 </html>
