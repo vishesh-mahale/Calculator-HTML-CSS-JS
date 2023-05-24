@@ -54,10 +54,20 @@
                 <div id="dot" onclick="addNewInput('.')">.</div>
                 <div id="eql" onclick="calculateResult()">=</div>
             </div>
+
+            <div class="mode" onclick="changeTheme()">
+                <i id="mode" class="fa-solid fa-moon"></i>
+            </div>
         </div>
     </div>
 
     <script>
+        function changeTheme() {
+            mode.className = (mode.className == 'fa-solid fa-sun') ? 'fa-solid fa-moon' : 'fa-solid fa-sun'
+            let body = document.querySelector('body');
+            mode.classList.contains('fa-sun') ? body.setAttribute('data-theme', 'dark') : body.setAttribute('data-theme', 'light');
+        }
+
         function calculateResult() {
             var replaced = calculator_result.value;
             if (calculator_result.value.includes('÷') || calculator_result.value.includes('×')) {
