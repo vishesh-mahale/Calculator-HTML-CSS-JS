@@ -3,6 +3,7 @@
 
 Calculator App for basic Oprations like Addition, Subtraction, Multiplication and Division. 
 
+
 **Normal mode:**
 
 ![light-theme](https://github.com/vishesh-mahale/Calculator-HTML-CSS-JS/assets/55619589/ac4010f1-7378-4f97-a721-a2adb803171c)
