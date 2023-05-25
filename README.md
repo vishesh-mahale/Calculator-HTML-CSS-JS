@@ -5,12 +5,11 @@ Calculator App for basic Oprations like Addition, Subtraction, Multiplication an
 
 **Normal mode:**
 
-![Light mode image](https://github.com/vishesh-mahale/Calculator-HTML-CSS-JS/blob/main/images/light-mode.png?raw=true)
-
+![light-theme](https://github.com/vishesh-mahale/Calculator-HTML-CSS-JS/assets/55619589/ac4010f1-7378-4f97-a721-a2adb803171c)
 
 **Dark mode:**
 
-![Light mode image](https://github.com/vishesh-mahale/Calculator-HTML-CSS-JS/blob/main/images/dark-mode.png?raw=true)
+![dark-theme](https://github.com/vishesh-mahale/Calculator-HTML-CSS-JS/assets/55619589/903e59f0-b7f5-4809-9b79-7bda4feb2c28)
 
 
 # Description
